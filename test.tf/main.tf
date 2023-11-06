@@ -7,3 +7,15 @@ resource "aws_vpc" "mtc_vpc" {
     Name = "dev2"
   }
 }
+
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+    }
+  }
+}
+
+provider "aws" {
+  region                  = "us-west-2"
+}
