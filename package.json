@@ -9,6 +9,5 @@
     "cdktf": "latest",
     "cdktf-cli": "latest",
     "@cdktf/provider-aws": "latest"
-    // ... include other providers or modules as needed
   }
 }
