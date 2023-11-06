@@ -1,0 +1,14 @@
+{
+  "name": "my-cdktf-project",
+  "version": "0.1.0",
+  "main": "main.ts",
+  "scripts": {
+    "synth": "cdktf synth"
+  },
+  "dependencies": {
+    "cdktf": "latest",
+    "cdktf-cli": "latest",
+    "@cdktf/provider-aws": "latest"
+    // ... include other providers or modules as needed
+  }
+}
