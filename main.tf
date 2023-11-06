@@ -1,3 +1,10 @@
+terraform {
+  backend "s3" {
+    bucket = "sltftestbucket"
+    key    = "terraform.tfstate"
+    region = "us-west-2"
+  }
+}
 
 resource "aws_vpc" "mtc_vpc" {
   cidr_block           = "10.123.0.0/16"
@@ -8,10 +15,6 @@ resource "aws_vpc" "mtc_vpc" {
     Name = "dev"
   }
 }
-
-
-
-
 
 resource "aws_subnet" "mtc_public_subnet" {
   vpc_id                  = aws_vpc.mtc_vpc.id
