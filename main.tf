@@ -14,4 +14,3 @@ resource "aws_s3_bucket" "example" {
   #  identityfile = "~/.ssh/mtckey" })
   #  interpreter = var.host_os == "windows" ? ["Powershell", "-Command"] : ["bash", "-c"]
   #}
-}
